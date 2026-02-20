@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake | web version</title>
+    <link rel="stylesheet" href="snake.css">
+    <script src="snake.js"></script>
+
+</head>
+<body>
+    <h1>Danger Snake</h1>
+   <div id="game-info">
+    <p id="score"></p>
+    <p id="high score"></p>
+   </div>
+
+   <div id="board">
+   <!-- 5x5 grid tiles -->
+   <div></div><div></div><div></div>
+   <div></div><div></div><div></div>
+   <div></div><div></div><div></div>
+   <div></div><div></div><div></div>
+   <div></div><div></div><div></div>
+   </div>
+<button onclick="startGame()">startGame</button>
+
+<script>
+    let score = 0;
+    let highScore = localStorage.getItem('highScore') || 0;
+
+    <!--Display high score on page load-->
+document.getElementById('high-score').textContent = `High Score: ${highScore}`;
+
+
+</script>
+
+
+       
+    
+</body>
+</html>
