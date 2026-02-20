@@ -52,6 +52,7 @@ function resetGame() {
   nextDirection = { x: 1, y: 0 };
 
   score = 0;
+  speedMs = 120;
   scoreEl.textContent = score;
 
   running = true;
