@@ -1,27 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Danger Snake | Web Version</title>
-  <link rel="stylesheet" href="snake.css" />
-  <script defer src="snake.js"></script>
+  <title>Danger Snake</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-  <h1>Danger Snake</h1>
+  <main class="wrap">
+    <h1>🐍 Danger Snake</h1>
 
-  <div id="game-info">
-    <p id="score">Score: 0</p>
-    <p id="high-score">High Score: 0</p>
-    <p id="status">Press Start</p>
-  </div>
+    <div class="hud">
+      <p>Score: <span id="score">0</span></p>
+      <button id="restart">Restart</button>
+    </div>
 
-  <div id="board" aria-label="Danger Snake game board"></div>
+    <canvas id="game" width="400" height="400"></canvas>
 
-  <button id="start-btn">Start Game</button>
+    <p class="tip">Arrow keys to move. Avoid 💣 fruit.</p>
+  </main>
 
-  <!-- If you want to keep everything in ONE file for now,
-       you can paste the JS from below inside a <script> tag instead of snake.js -->
+  <script src="script.js"></script>
 </body>
 </html>
