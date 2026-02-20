@@ -29,10 +29,13 @@
     let score = 0;
     let highScore = localStorage.getItem('highScore') || 0;
 
-    <!--Display high score on page load-->
+   //Display high score on page load
 document.getElementById('high-score').textContent = `High Score: ${highScore}`;
 
 
+//start game
+        function startGame() {
+            score = 0;
 </script>
 
 
