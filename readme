@@ -1,0 +1,52 @@
+# 🐍 Danger Snake
+
+A fun twist on the classic Snake game — but with a *dangerous* upgrade. Some fruit is **explosive**, and if you eat the wrong one… 💥 game over.
+
+Built with **HTML, CSS, and JavaScript**.
+
+---
+
+## 🎮 Gameplay
+
+- Control the snake and eat fruit to grow.
+- Most fruit is safe ✅
+- Certain fruit is **explosive** 💣  
+  Eat it and you **lose instantly**.
+
+---
+
+## 🕹️ Controls
+
+- **Arrow Keys** — Move (Up / Down / Left / Right)  
+*(Optional: add WASD if you implemented it.)*
+
+---
+
+## ✨ Features
+
+- Classic Snake movement + growth
+- Random fruit spawning
+- Exploding fruit mechanic (instant fail)
+- Score tracking
+- Clean UI with simple styling
+
+---
+
+## 🧠 Built With
+
+- **HTML** — game layout
+- **CSS** — styling
+- **JavaScript** — game logic (movement, collisions, spawning, scoring)
+
+---
+
+## 🚀 How To Run
+
+1. Download or clone this repo
+2. Open `index.html` in your browser
+
+That’s it — no installs, no setup.
+
+---
+
+## 📁 Project Structure
