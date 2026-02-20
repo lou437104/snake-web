@@ -40,9 +40,15 @@ document.getElementById('high-score').textContent = `High Score: ${highScore}`;
 
             // Start spawning exploding fruit 
          spawnExplodingFruit();
-        }
+         function spawnExplodingFruit() {
+            const tiles = document.querySelectorAll('#board div');
+            const randomTile = tiles[Math.floor(Math.random() * tiles.length)];
 
-         
+            // Remove any existing mole before adding a new one
+            tiles.forEach(tile => tile.innerHTML = '');
+
+        }
+    }
 </script>
 
 
