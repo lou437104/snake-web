@@ -36,6 +36,13 @@ document.getElementById('high-score').textContent = `High Score: ${highScore}`;
 //start game
         function startGame() {
             score = 0;
+            document.getElementById('score').textContent = `Score: ${score}`;
+
+            // Start spawning exploding fruit 
+         spawnExplodingFruit();
+        }
+
+         
 </script>
 
 
