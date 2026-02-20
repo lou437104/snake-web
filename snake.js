@@ -32,8 +32,8 @@ function spawnFruit() {
     pos = { x: randInt(0, gridSize - 1), y: randInt(0, gridSize - 1) };
   } while (isOnSnake(pos));
 
-  // 25% chance it's explosive
-  const isBomb = Math.random() < 0.25;
+  const chance = Math.min(0.25 + score * 0.01, 0.6); // caps at 60%
+  const isBomb = Math.random() < chance;
 
   fruit = {
     ...pos,
